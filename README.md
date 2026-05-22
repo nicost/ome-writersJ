@@ -1,7 +1,12 @@
 # ome-writers (Java)
 
 A Java port of [ome-writers](https://github.com/pymmcore-plus/ome-writers) — a streaming
-writer API for multi-dimensional microscopy images in OME-compliant formats.
+writer API for multi-dimensional microscopy images in OME-compliant formats. Ported from 
+the original Python code (written by Talley Lamber) by Claude code, with the intent to use
+it as a dependency in the Java Micro-Manager UI to write OME-Zarr.  For that to work, there 
+is a need for a reader(that can operate at the same time as the writer), and also for 
+pyramidal storage (to replace NDTiff storage as the only pyramidal storage currently supported 
+in Java Micro-Manager).
 
 ## About
 
